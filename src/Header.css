@@ -38,3 +38,7 @@
 .header-icon{
     margin-right: 8px;
 }
+.header-icon:hover{
+    cursor: pointer;
+    color: red;
+}

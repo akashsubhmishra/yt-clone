@@ -2,7 +2,7 @@
     margin-bottom: 20px;
     width: 270px;
 } 
-.videoCard > img{
+.videoCard-thumbnail{
     height: 140px;
     width: 250px;
 }

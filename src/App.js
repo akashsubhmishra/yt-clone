@@ -1,16 +1,16 @@
-import './App.css';
-import Header from './Header'
-import Sidebar from './Sidebar'
-import Recommended from './Recommended'
-
+import React from 'react';
+import Search from './Search'
+import Home from './Home'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-     <Header />
-     <div className='app-page'>
-       <Sidebar className='app-side' />
-       <Recommended className='app-recommended' />
-     </div>
+      <Router>
+        <Routes>
+          <Route path="/search/:searchTerm" element={<Search />} />
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

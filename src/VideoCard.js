@@ -6,7 +6,7 @@ import {Avatar} from "@mui/material";
 function VideoCard({image, title, channel, views, timestamp, channelImage}) {
     return(
         <div className="videoCard">
-            <img classname="videoCard-thumbnail" src={image} alt="" />
+            <img className="videoCard-thumbnail" src={image} alt="" />
             <div className="videoCard-info">
                 <Avatar className="video-avatar" alt={channel} src={channelImage} />
                 <div className="video-text">
