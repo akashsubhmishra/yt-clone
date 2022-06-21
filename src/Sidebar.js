@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Sidebar.css"
 import HomeIcon from "@mui/icons-material/Home";
 import ExploreIcon from '@mui/icons-material/Explore';
@@ -10,22 +10,40 @@ import WatchLaterIcon from "@mui/icons-material/WatchLater";
 import ThumbUpAltOutlinedIcon from "@mui/icons-material/ThumbUpAltOutlined";
 import ExpandMoreOutlinedIcon from "@mui/icons-material/ExpandMoreOutlined";
 import SidebarRow from './SidebarRow'
-
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link"
 
 function Sidebar() {
     return (
         <div className="sidebar">
-            <SidebarRow selected Icon={HomeIcon} title="Home" />
-            <SidebarRow Icon={ExploreIcon} title="Explore" />
-            <SidebarRow Icon={SubscriptionsIcon} title="Subscriptions" />
+            <Link to={"/"} style={{ textDecoration: 'none' }}>
+                <SidebarRow selected Icon={HomeIcon} title="Home" />
+            </Link>
+            <Link to={"/explore"} style={{ textDecoration: 'none' }}>
+                <SidebarRow Icon={ExploreIcon} title="Explore" />
+            </Link>
+            <Link to={"/subscriptions"} style={{ textDecoration: 'none' }}>
+                <SidebarRow Icon={SubscriptionsIcon} title="Subscriptions" />
+            </Link>
             <hr />
-            <SidebarRow Icon={VideoLibraryIcon} title="Library" />
-            <SidebarRow Icon={HistoryIcon} title="History" />
+            <Link to={"/library/#history"} style={{ textDecoration: 'none' }}>
+                <SidebarRow Icon={VideoLibraryIcon} title="Library" />
+            </Link>
+            <Link to={"/history"} style={{ textDecoration: 'none' }}>
+                <SidebarRow Icon={HistoryIcon} title="History" />
+            </Link>
+            <Link to={"*"} style={{ textDecoration: 'none' }}>
             <SidebarRow Icon={OndemandVideoIcon} title="Your Videos" />
-            <SidebarRow Icon={WatchLaterIcon} title="Watch Later" />
-            <SidebarRow Icon={ThumbUpAltOutlinedIcon} title="Liked Videos" />
+            </Link>
+            <HashLink smooth to={"/library/#later"} style={{ textDecoration: 'none' }}>
+                <SidebarRow Icon={WatchLaterIcon} title="Watch Later" />
+            </HashLink>
+            <HashLink smooth to={"/library/#liked"} style={{ textDecoration: 'none' }}>
+                <SidebarRow Icon={ThumbUpAltOutlinedIcon} title="Liked Videos" />
+            </HashLink>
+            <Link to={"*"} style={{ textDecoration: 'none' }}>
             <SidebarRow Icon={ExpandMoreOutlinedIcon} title="Show More" />
-        
+            </Link>
         </div>
 
     )

@@ -1,0 +1,16 @@
+.main-404{
+    text-align: center;
+  }
+  
+.page-404{
+    display: flex;
+}
+.Page404{
+    flex: 0.85;
+    background-color: #f9f9f9;
+    padding: 20px 10px;
+  }
+.Page404 > img{
+    height: 300;
+    width: 200;
+}

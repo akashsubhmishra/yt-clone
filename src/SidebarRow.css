@@ -12,6 +12,7 @@
     margin-left: 20px;
     font-size: 12px;
     font-weight: 500;
+    color: black;
 }
 .sidebarRow:hover {
     background-color: lightgray;
@@ -22,6 +23,8 @@
 }
 .sidebarRow:hover > .sidebarRow-title {
     font-weight: bold;
+    text-decoration: none;
+    color: black;
 }
 .sidebarRow.selected {
     background-color: lightgray;

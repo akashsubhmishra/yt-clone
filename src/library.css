@@ -1,0 +1,37 @@
+.libraries {
+    text-align: center;
+  }
+  
+.library-page{
+    display: flex;
+}
+.librariesPage{
+    flex: 0.85;
+    background-color: #f9f9f9;
+    padding: 10px 5px;
+    padding-bottom: 0;
+}
+
+h2{
+    text-align: left;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+.library-history{
+    display: flex;
+    flex-wrap: wrap;
+}
+.lib{
+    display: flex;
+    align-items: center;
+    color: #606060;
+    font-size: small !important;
+}
+.library-later > p{
+    text-align: left;
+}
+.library-playlists > p{
+    text-align: left;
+}.library-liked > p{
+    text-align: left;
+}
