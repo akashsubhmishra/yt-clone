@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Sidebar.css"
 import HomeIcon from "@mui/icons-material/Home";
 import ExploreIcon from '@mui/icons-material/Explore';

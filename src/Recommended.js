@@ -13,7 +13,7 @@ function Recommended() {
                 timestamp="4 months ago"
                 channelImage="https://yt3.ggpht.com/EQODiFvb8wmetXJlMzYt5ALY_yVDZyGR6pg9UJ5NQS4uG4QwUWysPtJbReYrkI6tjWLmDcQT=s900-c-k-c0x00ffffff-no-rj"
                 channel="Coke Studio"
-                image="https://img.youtube.com/vi/kAnYJHIXPvA/mqdefault.jpg"
+                image="https://i.ytimg.com/vi/U5ipE4_Fl70/maxresdefault.jpg"
              />
              <VideoCard 
                 title="Coke Studio Season 10 | Ranjish Hi Sahi | Ali Sethi"
@@ -61,7 +61,7 @@ function Recommended() {
                 timestamp="4 months ago"
                 channelImage="https://yt3.ggpht.com/EQODiFvb8wmetXJlMzYt5ALY_yVDZyGR6pg9UJ5NQS4uG4QwUWysPtJbReYrkI6tjWLmDcQT=s900-c-k-c0x00ffffff-no-rj"
                 channel="Coke Studio"
-                image="https://img.youtube.com/vi/kAnYJHIXPvA/mqdefault.jpg"
+                image="https://i.ytimg.com/vi/U5ipE4_Fl70/maxresdefault.jpg"
              />
              <VideoCard 
                 title="Coke Studio Season 10 | Ranjish Hi Sahi | Ali Sethi"
